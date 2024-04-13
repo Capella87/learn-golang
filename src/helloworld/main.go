@@ -18,9 +18,16 @@ const (
 )
 
 func main() {
-	var ima complex64 = 1.2i
+	var ima complex64 = 1.2i                               // Imaginary numbers; complex64 and complex128
+	var city1, city2 string = "San Francisco", "Daly City" // Multiple declaration at the same line
+	var arbi1, arbi2 = true, 1.2                           // Like "var" behavior in .NET, and we can declare variables with several types at the same line
+	var favoritegame = "Fallout 4"
 
 	fmt.Println(ima)
 	fmt.Println(pi)
 	fmt.Println(Lastiota)
+	fmt.Printf("Cities: %s %s\n", city1, city2)
+	fmt.Println(arbi1)
+	fmt.Println(arbi2)
+	fmt.Printf("Games: %s\n", favoritegame)
 }
