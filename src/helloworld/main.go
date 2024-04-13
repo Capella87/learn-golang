@@ -23,6 +23,9 @@ func main() {
 	var arbi1, arbi2 = true, 1.2                           // Like "var" behavior in .NET, and we can declare variables with several types at the same line
 	var favoritegame = "Fallout 4"
 
+	var n int
+	var emptystring string
+
 	fmt.Println(ima)
 	fmt.Println(pi)
 	fmt.Println(Lastiota)
@@ -30,4 +33,5 @@ func main() {
 	fmt.Println(arbi1)
 	fmt.Println(arbi2)
 	fmt.Printf("Games: %s\n", favoritegame)
+	fmt.Printf("Variable values without initialization: %d %s\n", n, emptystring)
 }
