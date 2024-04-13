@@ -26,6 +26,9 @@ func main() {
 	var n int
 	var emptystring string
 
+	// Short variable declarartion forms
+	lang, year := "Golang", 2007
+
 	fmt.Println(ima)
 	fmt.Println(pi)
 	fmt.Println(Lastiota)
@@ -34,4 +37,10 @@ func main() {
 	fmt.Println(arbi2)
 	fmt.Printf("Games: %s\n", favoritegame)
 	fmt.Printf("Variable values without initialization: %d %s\n", n, emptystring)
+	fmt.Printf("%s is made in %d\n", lang, year)
+
+	// Mix the new one and already declared one, but at least one variable must be a new one
+	thisyear, lang := 2024, ".NET"
+
+	fmt.Printf("In %d, I think %s and Golang are the best programming languages\n", thisyear, lang)
 }
