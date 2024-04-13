@@ -14,6 +14,7 @@ const (
 	A, B              = int64(-3), int64(5)
 	Y                 = float32(2.718)
 	MaxUnit           = ^uint(0)
+	Lastiota          = iota
 )
 
 func main() {
@@ -21,4 +22,5 @@ func main() {
 
 	fmt.Println(ima)
 	fmt.Println(pi)
+	fmt.Println(Lastiota)
 }
