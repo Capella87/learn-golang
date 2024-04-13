@@ -33,8 +33,6 @@ func main() {
 	fmt.Println(pi)
 	fmt.Println(Lastiota)
 	fmt.Printf("Cities: %s %s\n", city1, city2)
-	fmt.Println(arbi1)
-	fmt.Println(arbi2)
 	fmt.Printf("Games: %s\n", favoritegame)
 	fmt.Printf("Variable values without initialization: %d %s\n", n, emptystring)
 	fmt.Printf("%s is made in %d\n", lang, year)
@@ -43,4 +41,7 @@ func main() {
 	thisyear, lang := 2024, ".NET"
 
 	fmt.Printf("In %d, I think %s and Golang are the best programming languages\n", thisyear, lang)
+
+	// Make arbi1 and arbi2 be used.. anyway!
+	_, _ = arbi1, arbi2
 }
