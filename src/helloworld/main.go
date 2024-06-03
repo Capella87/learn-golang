@@ -6,6 +6,7 @@ import (
 
 const pi = 3.1416
 
+// Constants
 const (
 	No                = !Yes
 	Yes               = true
@@ -42,6 +43,24 @@ func main() {
 
 	fmt.Printf("In %d, I think %s and Golang are the best programming languages\n", thisyear, lang)
 
-	// Make arbi1 and arbi2 be used.. anyway!
+	// Make arbi1 and arbi2 be used... anyway!
 	_, _ = arbi1, arbi2
+
+	// Anonymous Functions
+	x, y := func() (int, int) {
+		fmt.Println("This function has no parameters.")
+		return 8, 7
+	}()
+
+	// Has inputs and no returns
+	func(a, b int) {
+		// Parameters in anonymous function shadow outer scope
+		fmt.Println("a*a + b*b =", a*a+b*b)
+	}(x, y) // Pass two parameters
+
+	// No inputs, no returns
+	func() {
+		fmt.Println("Ken Thompson, Rob Pike, and Robert Griesemer made Go language.")
+	}()
+
 }
