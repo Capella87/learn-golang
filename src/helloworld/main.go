@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"math/rand/v2" // New in 1.22
+	// "crypto/rand" // More secure
 )
 
 const pi = 3.1416
@@ -63,4 +65,6 @@ func main() {
 		fmt.Println("Ken Thompson, Rob Pike, and Robert Griesemer made Go language.")
 	}()
 
+	r := rand.Uint32()
+	fmt.Printf("Next pseudo-random number is %v (%v)", r, r)
 }
