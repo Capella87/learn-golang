@@ -66,5 +66,7 @@ func main() {
 	}()
 
 	r := rand.Uint32()
-	fmt.Printf("Next pseudo-random number is %v (%v)", r, r)
+	fmt.Printf("Next pseudo-random number is %v (%v)\n", r, r)
+
+	fmt.Printf("The type of variable r is %T\n", r)
 }
