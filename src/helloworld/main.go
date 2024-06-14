@@ -78,4 +78,10 @@ func main() {
 	fmt.Printf("Next pseudo-random number is %v (%v)\n", r, r)
 
 	fmt.Printf("The type of variable r is %T\n", r)
+
+	// Range
+	for i := range 10 {
+		fmt.Print(i, "\n")
+	}
+
 }
