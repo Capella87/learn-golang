@@ -3,7 +3,14 @@ package main
 import (
 	"fmt"
 	"math/rand/v2" // New in 1.22
-	// "crypto/rand" // More secure
+	// Full package import form
+	// securerand "crypto/rand" // More secure
+
+	// Dot import (Can invoke methods without package name and dot
+	. "time"
+
+	// Anonymous (a.k.a blank) import
+	_ "net/http/pprof"
 )
 
 const pi = 3.1416
@@ -39,6 +46,8 @@ func main() {
 	fmt.Printf("Games: %s\n", favoritegame)
 	fmt.Printf("Variable values without initialization: %d %s\n", n, emptystring)
 	fmt.Printf("%s is made in %d\n", lang, year)
+
+	fmt.Println(Now())
 
 	// Mix the new one and already declared one, but at least one variable must be a new one
 	thisyear, lang := 2024, ".NET"
