@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math/rand/v2" // New in 1.22
+	"runtime"
+
 	// Full package import form
 	// securerand "crypto/rand" // More secure
 
@@ -83,5 +85,17 @@ func main() {
 	for i := range 10 {
 		fmt.Print(i, "\n")
 	}
+
+	// Switch
+	fmt.Print("You're running Go on ")
+	switch whichOs := runtime.GOOS; whichOs {
+	case "windows":
+		fmt.Println("Microsoft Windows")
+	case "darwin":
+		fmt.Println("macOS")
+	case "linux":
+		fmt.Println("Linux")
+	}
+	fmt.Println("You can see all possible cases by `go tool dist list`")
 
 }
