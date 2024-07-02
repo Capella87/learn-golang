@@ -23,7 +23,18 @@ func main() {
 Next:
 	fmt.Println(i)
 	i++
-	if i < 5 {
-		goto Next
+	if i >= 5 {
+		goto Exit
 	}
+
+	// Shrink the scope of k by an explicit code block
+	// Or we can declare the variable above 'goto'
+	{
+		k := i + i
+		fmt.Println(k)
+	}
+	i++
+	goto Next
+Exit:
+	fmt.Println("\nBye")
 }
