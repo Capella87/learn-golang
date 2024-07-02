@@ -18,4 +18,12 @@ func main() {
 	default:
 		fmt.Println("n =", n)
 	}
+
+	i := 0
+Next:
+	fmt.Println(i)
+	i++
+	if i < 5 {
+		goto Next
+	}
 }
